@@ -1,0 +1,12 @@
+TypeCasting
+    1. Promotion
+    2. Demotion
+
+
+
+     parent p1 = c1;    //  -> Upgrading a child to parent   -> UpCasting
+            System.out.println(p1.x);
+    //        System.out.println(p1.y);   //-> Here it will Through error while printing Child Class
+            p1.fun1();
+    //        p1.fun2();    //  Here it will Through error while printing Child Class
+        }
