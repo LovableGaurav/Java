@@ -10,8 +10,8 @@
 //non-sealed class Rectangle extends sheild {
 //}
 //public sealed class Polygon extends sheild
-//        permits Polygon.Triangle, Pentagon {
-//    private class Triangle extends Polygon {
-//    }
-//}
+////        permits Polygon.Triangle {
+////    private class Triangle extends Polygon {
+////    }
+////}
 //
