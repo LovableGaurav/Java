@@ -1,28 +1,17 @@
 package JavaTest.Oops1;
 
 abstract public class Payment {
-     long amount ;
-     String CardPayment;
-     String UpiPay;
-     int Balance1 = 10000;
-     int Balance2 = 5000;
+    long amount;
+    int balance = 10000; // Simplified to one balance for the example
 
+    public Payment(long amount) {
+        this.amount = amount;
+    }
 
-     public Payment(int amount, String cardPayment, String upiPay) {
-         this.amount = amount;
-         CardPayment = cardPayment;
-         UpiPay = upiPay;
-     }
-    abstract void SetCardPayment(long ... amount);
-    protected abstract void SetUpiPay(long amount);
-//     @Override
-     public String info() {
-         return "Payment{" +
-                 "amount=" + amount +
-                 ", CardPayment='" + CardPayment + '\'' +
-                 ", UpiPay='" + UpiPay + '\'' +
-                 '}';
-     }
+    // Every child MUST implement these
+    abstract void setCardPayment(long... amounts);
+    abstract void setUpiPay(long amount);
+}
 
 
 

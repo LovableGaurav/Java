@@ -1,21 +1,19 @@
 package JavaTest.Oops1;
 
-import static Abstraction.BankInterface.logger;
-
 public class CredicardPayment extends Payment {
-    public CredicardPayment(int amount, String cardPayment, String upiPay) {
-        super(amount, cardPayment, upiPay);
+    public CredicardPayment(long amount) {
+        super(amount);
     }
 
     @Override
-    void SetCardPayment(long... amount) {
-        for (long amt : amount) {
-            if (amt <= 0) {
-                logger.warning("Invalid amounts");
-            } else
-                Balance1 -= amt;
+    void setCardPayment(long... amounts) {
+        for (long amt : amounts) {
+            balance -= amt;
+            System.out.println("Card Paid: " + amt);
         }
-        logger.info("Payment is Successful " + amount);
-
+        System.out.println("Final Balance: " + balance);
     }
+
+    @Override
+    void setUpiPay(long amount) {}
 }
