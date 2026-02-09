@@ -1,0 +1,5 @@
+Assignment
+    -> on Looping from last to first in listofNums
+    2. Merage two list
+        1. check if the List 2 element present in List 1 or not
+        if not add otherwise except those element add all that will be called True merge
